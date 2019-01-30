@@ -1,12 +1,12 @@
 <template>
   <div>
-    <input @input="onInput">
+    <input @input='onInput'>
   </div>
 </template>
 
 <script>
 export default {
-  name: "SearchBar",
+  name: 'SearchBar',
   methods: {
     onInput: function(event) {
       this.$emit('termChange', event.target.value)
@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style lang="sass">
+<style lang='sass'>
 
 </style>
 

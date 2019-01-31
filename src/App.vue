@@ -9,7 +9,7 @@
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
-const API_KEY = "";
+const API_KEY = "AIzaSyAfdR1eK14tXjtJuuuCG3cA95TcgZlFpI4";
 
 export default {
   name: "App",
@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   :root {
     font-size: 62.5%;
   }

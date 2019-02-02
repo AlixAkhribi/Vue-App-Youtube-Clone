@@ -1,6 +1,6 @@
 <template>
   <div>
-    <li class="list-group-item media">
+    <li class="list-group-item media" @click="onVideoSelect">
       <img class="video-thumbail mr-3" :src="smallThumbnailURL">
       <div class="media-body">
         <p class="video-title">{{videoTitle}}</p>
@@ -19,6 +19,12 @@ export default {
     },
     videoTitle() {
       return this.video.snippet.title;
+    }
+  },
+  methods : {
+    // Passes video to parent component 
+    onVideoSelect () {   
+      this.$emit('videoSelect', this.video)
     }
   }
 };

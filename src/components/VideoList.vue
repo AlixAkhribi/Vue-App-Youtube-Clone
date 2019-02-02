@@ -5,6 +5,7 @@
       v-for='video in videos'
       :video='video'
       :key='video.etag'
+      @videoSelect='onVideoSelect'
       ></VideoListItem>
     </ul>
   </div>
@@ -19,7 +20,12 @@ export default {
     VideoListItem
   },
   props: ['videos'],
-  methods: {}
+  methods: {
+    // Takes the video from child component and passes it to parent
+    onVideoSelect (video) {
+      this.$emit('onVideoSelect', video)
+    }
+  }
 };
 </script>
 

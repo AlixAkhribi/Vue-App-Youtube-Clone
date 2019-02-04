@@ -21,10 +21,10 @@ export default {
       return this.video.snippet.title;
     }
   },
-  methods : {
-    // Passes video to parent component 
-    onVideoSelect () {   
-      this.$emit('videoSelect', this.video)
+  methods: {
+    // Passes video to parent component
+    onVideoSelect() {
+      this.$emit("videoSelect", this.video);
     }
   }
 };

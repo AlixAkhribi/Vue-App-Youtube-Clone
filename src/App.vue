@@ -1,11 +1,10 @@
 <template>
   <div class="container">
     <SearchBar @termChange="onTermChange"></SearchBar>
-    <VideoDetail :video="selectedVideo"/>
-    <VideoList 
-    @onVideoSelect="videoSelect"
-    :videos="videos"
-    ></VideoList>
+    <div class="row">
+      <VideoDetail :video="selectedVideo"/>
+      <VideoList @onVideoSelect="videoSelect" :videos="videos"></VideoList>
+    </div>
   </div>
 </template>
 
@@ -30,8 +29,8 @@ export default {
     };
   },
   methods: {
-    videoSelect (video){
-      this.selectedVideo = video
+    videoSelect(video) {
+      this.selectedVideo = video;
     },
     onTermChange(searchTerm) {
       axios
@@ -50,7 +49,13 @@ export default {
 </script>
 
 <style lang="scss">
-  :root {
-    font-size: 62.5%;
+:root {
+  font-size: 62.5%;
+}
+
+.row {
+  @media only screen and (min-width: 769px) {
+    flex-wrap: inherit;
   }
+}
 </style>

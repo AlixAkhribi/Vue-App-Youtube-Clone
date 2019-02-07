@@ -31,9 +31,11 @@ export default {
 
 <style lang="scss" scoped>
 .video-details {
+  background: #201c29;
+  color: white;
   margin-top: 1rem;
   padding: 1rem;
-  border: 0.1rem solid #dddddd;
+  border: 0.1rem solid darkorange;
   border-radius: 0.4rem;
 }
 </style>

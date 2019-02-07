@@ -24,7 +24,7 @@ div {
     width: 75%;
     font-size: 1.6rem;
     background: #201c29;
-    border-radius: 27px;
+    border-radius: 2.7rem;
     outline: 0;
     padding: 0.7rem 2.5rem 0.7rem 1.5rem;
     color: white;

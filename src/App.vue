@@ -53,6 +53,10 @@ export default {
   font-size: 62.5%;
 }
 
+body{
+  background-color: #100e17
+}
+
 .row {
   @media only screen and (min-width: 769px) {
     flex-wrap: inherit;

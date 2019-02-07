@@ -34,9 +34,14 @@ export default {
 .list-group-item {
   display: flex;
   cursor: pointer;
+  background: #201c29;
+  color: white;
+  transition: 0.5s ease-in-out;
 
   &:hover {
-    background: #eeeeee;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    border: 0.1rem solid darkorange;
   }
 
   .video-title {

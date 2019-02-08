@@ -14,6 +14,6 @@ Youtube clone using [Vue](https://vuejs.org/)
 1. In the search bar, type the name of the video you want to look for.
    ![Imgur](https://i.imgur.com/LSEu9PX.png)
 2. Click on the video you'd like to play.
-   ![Imgur](https://i.imgur.com/IwtsbDU.gifv)
+   ![Imgur](https://i.imgur.com/IwtsbDU.gif)
 3. Click play to start watching the selected video or click on the recommended videos.
-   ![Imgur](https://i.imgur.com/zuEYmoK.gifv)
+   ![Imgur](https://i.imgur.com/zuEYmoK.gif)
